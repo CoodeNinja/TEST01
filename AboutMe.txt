@@ -10,10 +10,8 @@ For certainly I have turned into a MONSTER!
 
 Don't even say Itachi's name. You cold blooded murderer.
 
-<<<<<<< HEAD
-Take Action ~
-Start new...
-=======
 Itachi devoted his life for the hidden leaf village. He thought like a Hokage when he was just 8 years old.
 The leaders of the Leaf Village used him, used his powers to go against his own clan.
->>>>>>> 5e001b8ce1559b18cefe325e261e850963cdbbcf
+
+Take Action
+Start new
