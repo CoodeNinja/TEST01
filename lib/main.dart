@@ -18,7 +18,7 @@ Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
   var initializationSettingsAndroid =
-      const AndroidInitializationSettings('');
+      const AndroidInitializationSettings('splash');
   var initializationSettingsIOS = DarwinInitializationSettings(
       requestAlertPermission: true,
       requestBadgePermission: true,
