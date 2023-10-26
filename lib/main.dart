@@ -1,3 +1,4 @@
+import 'firebase_options.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/services.dart';
@@ -32,7 +33,9 @@ Future main() async {
     debugPrint('notification payload: $payload');
   });
 
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    name: 'name-here',
+    options: DefaultFirebaseOptions.currentPlatform,);
 
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(

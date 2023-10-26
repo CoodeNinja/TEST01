@@ -39,7 +39,7 @@ class WelcomeScreen extends StatelessWidget {
                 height: 2.h,
               ),
               Text(
-                'Welcome to Health Tracker\n Get started !',
+                'Welcome to FitTrack\n Get started !',
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       letterSpacing: 3,

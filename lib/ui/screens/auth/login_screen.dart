@@ -123,11 +123,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             }
                             _authenticateWithEmailAndPass(context);
                           } else {
-                            MySnackBar.error(
-                                message:
-                                    'Please Check Your Internet Connection',
-                                color: Colors.red,
-                                context: context);
+                            MySnackBar.error(message: 'Please Check Your Internet Connection', color: Colors.red, context: context);
                           }
                         }),
                     SizedBox(
@@ -215,7 +211,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             // }
                             ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                               content: Text(
-                                'It will be added soon !!',
+                                'Loading..',
                                 style: Theme.of(context)
                                     .textTheme
                                     .displayLarge
@@ -239,7 +235,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           onTap: () {
                             ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                               content: Text(
-                                'It will be added soon !!',
+                                'Hi there',
                                 style: Theme.of(context)
                                     .textTheme
                                     .displayLarge
