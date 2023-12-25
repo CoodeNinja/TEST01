@@ -1,33 +1,34 @@
 // import 'package:animated_theme_switcher/animated_theme_switcher.dart';
 // import 'package:flutter/material.dart';
-// import 'package:health_tracker/models/user.dart';
+// import 'package:health_tracker/data/models/user_model.dart';
 // import 'package:health_tracker/utils/user_preferences.dart';
-// import 'package:health_tracker/widgets/appbar_widget.dart';
-// import 'package:health_tracker/widgets/button_widget.dart';
-// import 'package:health_tracker/widgets/profile_widget.dart';
-// import 'package:health_tracker/widgets/textfield_widget.dart';
+// import 'package:health_tracker/ui/widgets/appbar_widget.dart';
+// import 'package:health_tracker/ui/widgets/button_widget.dart';
+// import 'package:health_tracker/ui/screens/profile/profile_screen.dart';
+// import 'package:health_tracker/ui/widgets/textfield_widget.dart';
 // import 'package:image_picker/image_picker.dart';
 // import 'package:path_provider/path_provider.dart';
 // import 'package:path/path.dart';
 // import 'dart:io';
-
+//
+//
 // class EditProfileScreen extends StatefulWidget {
 //   const EditProfileScreen({ Key? key }) : super(key: key);
-
+//
 //   @override
 //   State<EditProfileScreen> createState() => _EditProfileScreenState();
 // }
-
+//
 // class _EditProfileScreenState extends State<EditProfileScreen> {
 //   late User user;
-
+//
 //   @override
 //   void initState() {
 //     super.initState();
-
+//
 //     user = UserPreferences.getUser();
 //   }
-
+//
 //   @override
 //   Widget build(BuildContext context) {
 //     return ThemeSwitchingArea(
@@ -44,17 +45,17 @@
 //                   isEdit: true,
 //                   onClicked: () async {
 //                     final image = await ImagePicker().pickImage(source: ImageSource.gallery);
-
+//
 //                     if (image == null) return;
-
+//
 //                     final directory = await getApplicationDocumentsDirectory();
 //                     final name = basename(image.path);
 //                     final imageFile = File('${directory.path}/$name');
-//                     final newImage = 
+//                     final newImage =
 //                         await File(image.path).copy(imageFile.path);
 //                     setState(() => user = user.copy(imagePath: newImage.path));
 //                   },
-
+//
 //                 ),
 //                 const SizedBox(height: 24,),
 //                 TextFieldWidget(
@@ -90,4 +91,6 @@
 //       ),
 //     );
 //   }
+//
+//   buildAppBar(BuildContext context) {}
 // }

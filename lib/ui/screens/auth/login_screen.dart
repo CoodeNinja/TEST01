@@ -199,16 +199,16 @@ class _LoginScreenState extends State<LoginScreen> {
                       children: [
                         InkWell(
                           onTap: () async {
-                            // bool isConnected = await InternetConnectionChecker().hasConnection;
-                            // if (isConnected) {
-                            //   FirebaseAuthRepo().googleSignIn();
-                            // } else {
-                            //   MySnackBar.error(
-                            //       message:
-                            //           'Please Check Your Internet Connection',
-                            //       color: Colors.red,
-                            //       context: context);
-                            // }
+                            bool isConnected = await InternetConnectionChecker().hasConnection;
+                            if (isConnected) {
+                              FirebaseAuthRepo().googleSignIn();
+                            } else {
+                              MySnackBar.error(
+                                  message:
+                                      'Please Check Your Internet Connection',
+                                  color: Colors.red,
+                                  context: context);
+                            }
                             ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                               content: Text(
                                 'Loading..',

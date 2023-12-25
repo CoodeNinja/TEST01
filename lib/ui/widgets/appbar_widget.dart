@@ -41,7 +41,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   context,
                   MaterialPageRoute(
                       builder: (context) => ProfileScreen(
-                          uid: FirebaseAuth.instance.currentUser!.uid)));
+                          uid: FirebaseAuth.instance.currentUser!.uid))
+              );
             },
             child: CircleAvatar(
               // backgroundImage: AssetImage('assets/images/profile.jpg'),

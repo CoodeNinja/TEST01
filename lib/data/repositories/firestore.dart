@@ -107,6 +107,7 @@ class FireStoreCrud {
   }
 
   Future<void> followUser(String uid, String followId) async {
+
     try {
       DocumentSnapshot snap =
           await _firestore.collection('users').doc(uid).get();
@@ -305,6 +306,7 @@ class FireStoreCrud {
       throw e.toString();
     }
   }
+
 
   // Stream<List<model.User>> getUsers() => _firestore.collection('users').snapshots().transform(Utils.transformer(model.User.fromSnap));
 }

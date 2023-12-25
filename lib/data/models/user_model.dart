@@ -1,5 +1,4 @@
 
-//import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:health_tracker/shared/constants/consts_variables.dart';
 
@@ -20,6 +19,8 @@ class User {
       required this.bookmarkedRecipes,
       required this.followers,
       required this.following});
+
+
 
   static User fromSnap(DocumentSnapshot snap) {
     var snapshot = snap.data() as Map<String, dynamic>;

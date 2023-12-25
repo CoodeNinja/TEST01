@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:health_tracker/data/repositories/firebase_auth.dart';
@@ -29,6 +30,9 @@ class _LoginScreenState extends State<SignUpScreen> {
   late TextEditingController _nameController;
   late TextEditingController _emailController;
   late TextEditingController _passwordController;
+  //final emailTextController = TextEditingController(); //youtube added
+  //final passwordTextController = TextEditingController(); //youtube added
+  //final confirmPasswordTextController = TextEditingController(); //youtube added
   Sex? _sex = Sex.male;
   Uint8List? _image;
 
@@ -55,6 +59,46 @@ class _LoginScreenState extends State<SignUpScreen> {
       _image = image;
     });
   }
+
+//Youtube Added
+//   Future<void> signUp() async {
+//     showDialog(
+//         context: context,
+//         builder: (context) => const Center(
+//           child: CircularProgressIndicator(),
+//         )
+//     );
+//
+//     if (passwordTextController.text != passwordTextController.text){
+//       Navigator.pop(context);
+//       //MySnackBar.error(message: 'Passwords dont match', color: Colors.red, context: context);
+//       //displayMessage("password");
+//       return;
+//     }
+//
+//
+//     // Try Creating the User
+//     try {
+//       UserCredential userCredential =
+//       await FirebaseAuth.instance.createUserWithEmailAndPassword(
+//           email: emailTextController.text, password: passwordTextController.text,);
+//
+//       // After Creating the user
+//       FirebaseFirestore.instance
+//       .collection("Users")
+//       .doc(userCredential.user!.email)
+//       .set({
+//         'username' : emailTextController.text.split('@')[0],
+//         'bio' : 'Empty bio'
+//       });
+//
+//     } on FirebaseAuthException catch (e){
+//       print (e.code);
+//     }
+//
+//   }// youtube end
+
+
 
   @override
   Widget build(BuildContext context) {

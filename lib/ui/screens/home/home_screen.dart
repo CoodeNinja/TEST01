@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:health_tracker/ui/screens/home/add_post_screen.dart';
 import 'package:health_tracker/ui/screens/home/widgets/postcard_widget.dart';
 import 'package:health_tracker/ui/widgets/indicator_widget.dart';
-// import 'package:health_tracker/ui/widgets/drawer_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,7 +13,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeState extends State<HomeScreen> {
   // late List<Post> _posts;
-
+  //
   // void _fetchPosts()  async {
   //   _posts =
   // }
@@ -24,7 +23,7 @@ class _HomeState extends State<HomeScreen> {
     return Scaffold(
       // drawer: const NavDrawer(),
       // appBar: AppBar(
-      //   title: const Text('Health Tracker'),
+      //   title: const Text('FitTrack'),
       //   centerTitle: true,
       // ),
       body: Padding(
